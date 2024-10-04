@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Hub - Red Social de Música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#explorar">Explorar</a></li>
+                <li><a href="#amigos">Amigos</a></li>
+                <li><a href="#feed">Feed</a></li>
+                <li><a href="#spotify">Spotify</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="explorar" class="explorar-container">
+        <h2>Explorar Música</h2>
+        <div class="carrusel">
+            <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">&#10094;</button>
+            <div class="carrusel-items">
+                <div class="musica-item">
+                    <img src="https://cdn.milenio.com/uploads/media/2020/12/09/colibritany-antes-y-despues-captura_0_0_1200_747.jpg" alt="Artista 1">
+                    <p>Colibrittany - Pop</p>
+                    <a href="https://open.spotify.com/intl-es/artist/3zcuKJimMT3vahfO6w6V78"target="_blank">Escuchar en Spotify</a>
+                </div>
+                <div class="musica-item">
+                    <img src="https://i.scdn.co/image/ab6761610000e5eb54fddd2c41b624cf67b1300b"  alt="Papi Micky">
+                    <p>Miguel Devia - Rock</p>
+                    <a href="https://open.spotify.com/intl-es/artist/2UELoJlr5Cs7mKHqFIx4JK" target="_blank">Escuchar en Spotify</a>
+                </div>
+                
+                <!-- Agrega más artistas aquí -->
+                <div class="musica-item">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0283cc47e69bb033807affa91f"  alt="Luli Love">
+                    <p>Luli Love - Kpop</p>
+                    <a href="https://open.spotify.com/intl-es/artist/01FD3tUSgbzEZDcFHoeKzk" target="_blank">Escuchar en Spotify</a>
+                </div>
+                <div class="musica-item">
+                    <img src="https://i.scdn.co/image/ab67616d00001e022cac682dfff0a6031d4d634f"  alt="Karol Dance">
+                    <p>Karol Dance - Balada</p>
+                    <a href="https://open.spotify.com/intl-es/artist/4iUUD4Z0SUgZdO5qGvXS1P" target="_blank">Escuchar en Spotify</a>
+                </div>
+                <div class="musica-item">
+                    <img src="https://i.scdn.co/image/ab67616100005174d642648235ebf3460d2d1f6a"  alt="BTS">
+                    <p>BTS - PunkEmo</p>
+                    <a href="https://open.spotify.com/intl-es/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">Escuchar en Spotify</a>
+                </div>
+                <div class="musica-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOX8oCBbXKV_EsYc8TV4DWr1yu-BvQFof2mg&s"  alt="Don Flaytiano">
+                    <p>Don Flaytiano - Rap</p>
+                    <a href="https://open.spotify.com/intl-es/artist/3eWSJ0gJ6sdgwLOaa3tHnz" target="_blank">Escuchar en Spotify</a>
+                </div>
+                <div class="musica-item">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebc99be602f5beac87049ca7c1"  alt="El Jordan">
+                    <p>El Jordan - Bossa Nova</p>
+                    <a href="https://open.spotify.com/intl-es/artist/1fIJZfSmqQkuqfKNRmrS1V" target="_blank">Escuchar en Spotify</a>
+                </div>
+                <div class="musica-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_MlPM1Mof4-H1I_QE5RAb0VkI1UpBrNqUnA&s"  alt="Matt Hunter">
+                    <p>Matt Hunter - Jazz</p>
+                    <a href="https://open.spotify.com/intl-es/artist/20pVLDSueWpSOPCWnCWzIU" target="_blank">Escuchar en Spotify</a>
+                </div>
+            </div>
+            <button class="carrusel-btn next" onclick="moverCarrusel(1)">&#10095;</button>
+        </div>
+    </section>
+    
+
+<!-- Sección Amigos -->
+<section id="amigos">
+    <h2>Amigos</h2>
+    <div class="amigo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0BTYUO_mKu3UZPt9sfOPkSNSxXwE6Hz2Tg&s" alt="Foto de perfil de Juan" class="amigo-foto">
+        <p>Daniel - Fan de Pop y Rock</p>
+        <button onclick="window.location.href='#perfil-daniel'">Ver Perfil</button>
+    </div>
+    <div class="amigo">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAPCiqI3h0bMA6ogD0BlwAyREDPhttK46HgJpNww3zNgZZJWT62efcxMR4_Dl9C4V86adoDgKZRFXygI0xIwMPdrH4gWCJtDKY8xFvuNwSBThBORfSX1krbTBKIX2nyNOtEoGMIoX2RCf/s1600/gustavo+maurelli" alt="Foto de perfil de María" class="amigo-foto">
+        <p>Antonia - Amante del Jazz</p>
+        <button onclick="window.location.href='#perfil-antonia'">Ver Perfil</button>
+    </div>
+</section>
+
+<!-- Sección Amigos -->
+<section id="amigos">
+    <h2>Sugerencias</h2>
+    <div id="lista-amigos">
+        <!-- Los amigos existentes se mostrarán aquí -->
+    </div>
+
+    <!-- Formulario para agregar un nuevo amigo -->
+    <div class="agregar-amigo">
+        <input type="text" id="nombre-amigo" placeholder="Buscar perfil">
+        <input type="text" id="descripcion-amigo" placeholder="Descripción (ej. Fan de Rock)">
+        <input type="text" id="foto-amigo" placeholder="Agregar foto">
+        <button onclick="agregarAmigo()">Agregar Amigo</button>
+    </div>
+</section>
+
+
+<!-- Sección Feed -->
+<section id="feed">
+    <h2>Comparte tus gustos musicales</h2>
+
+    <div id="compartir" class="compartir-container">
+        <input type="text" id="titulo-post" class="input-titulo" placeholder="Título de tu publicación">
+        <textarea id="contenido-post" class="textarea-contenido" rows="4" placeholder="Escribe sobre tu playlist o tu canción favorita..."></textarea>
+        <button class="btn-compartir" onclick="crearPost()">Compartir</button>
+    </div>
+
+    <div id="publicaciones">
+        <!-- Aquí aparecerán las publicaciones compartidas -->
+    </div>
+</section>
+
+
+    <!-- Sección Spotify -->
+    <section id="spotify">
+        <h2>Conéctate con Spotify</h2>
+        <button onclick="conectarSpotify()">Conectar a Spotify</button>
+        <div id="spotify-contenido">
+            <!-- Aquí se mostrará el contenido de Spotify -->
+        </div>
+    </section>
+
+<!-- Sección Perfil -->
+<section id="perfil" class="perfil-container">
+    <h2>Perfil</h2>
+    <div class="perfil-info">
+        <div class="imagen-perfil">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJMBlq_pjNQyhLYmh-XgrhzaJS13Tw5Oymwrzv7TTtianK3p2_VXX1mMEGCbo9Qzct5lE&usqp=CAU" alt="Foto de perfil de Juan">
+        </div>
+        <p><strong>Nombre:</strong> Juan</p>
+        <p><strong>Canciones Favoritas:</strong></p>
+        <ul class="lista-canciones">
+            <li>
+                <a href="https://open.spotify.com/intl-es/track/37ZJ0p5Jm13JPevGcx4SkF" target="_blank" class="enlace-cancion">Livin' On A Prayer - Bon Jovi</a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/intl-es/track/5v9LMshhQsNtkUkcXRGO7i" target="_blank" class="enlace-cancion">Alegria - Anitta (feat. ThiagoPZK & Emilia)</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Perfil de Daniel -->
+<section id="perfil-daniel" class="perfil-container">
+    <h2>Perfil de Daniel</h2>
+    <div class="perfil-info">
+        <div class="imagen-perfil">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0BTYUO_mKu3UZPt9sfOPkSNSxXwE6Hz2Tg&s" alt="Foto de perfil de Daniel">
+        </div>
+        <p><strong>Nombre:</strong> Daniel</p>
+        <p><strong>Canciones Favoritas:</strong></p>
+        <ul class="lista-canciones">
+            <li>
+                <a href="https://open.spotify.com/intl-es/track/37ZJ0p5Jm13JPevGcx4SkF" target="_blank" class="enlace-cancion">Livin' On A Prayer - Bon Jovi</a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/intl-es/track/5v9LMshhQsNtkUkcXRGO7i" target="_blank" class="enlace-cancion">Alegria - Anitta (feat. ThiagoPZK & Emilia)</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Perfil de Antonia -->
+<section id="perfil-antonia" class="perfil-container">
+    <h2>Perfil de Antonia</h2>
+    <div class="perfil-info">
+        <div class="imagen-perfil">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAPCiqI3h0bMA6ogD0BlwAyREDPhttK46HgJpNww3zNgZZJWT62efcxMR4_Dl9C4V86adoDgKZRFXygI0xIwMPdrH4gWCJtDKY8xFvuNwSBThBORfSX1krbTBKIX2nyNOtEoGMIoX2RCf/s1600/gustavo+maurelli" alt="Foto de perfil de Antonia">
+        </div>
+        <p><strong>Nombre:</strong> Antonia</p>
+        <p><strong>Canciones Favoritas:</strong></p>
+        <ul class="lista-canciones">
+            <li>
+                <a href="https://open.spotify.com/intl-es/track/0TkyAwi6LZCHEUrYKdc90N" target="_blank" class="enlace-cancion">Kimi No Toriko  - Rizky Ayuba</a>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/intl-es/track/5PnEBmCk56RQphcMe7EqhG" target="_blank" class="enlace-cancion">Como Yo Le Doy-Spanglish Version - Pitbull</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Vinculando el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
